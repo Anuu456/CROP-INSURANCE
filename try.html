@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="trr.css">
+    <title>Crop Insurance Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Crop Insurance Calculator</h1>
+        <form action="try.php" method="post">
+            <label for="cropType">Select Crop Type:</label>
+            <select name="cropType" id="cropType">
+                <option value="wheat">Wheat</option>
+                <option value="corn">Corn</option>
+                <option value="coffee">Coffee</option>
+                <option value="paddy">Paddy</option>
+                <option value="maize">Maize</option>
+                <!-- Add more crop options as needed -->
+            </select>
+
+            <label for="acres">Enter Acres:</label>
+            <input type="text" name="acres" id="acres" required>
+
+            <button type="submit">Calculate Insurance</button>
+        </form>
+    </div>
+</body>
+</html>

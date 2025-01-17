@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crop Insurance Application Status</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .status-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="status-container">
+  <h2>Crop Insurance Application Status</h2>
+  <label for="applicationCode">Enter Your Application Code:</label>
+  <input type="text" id="applicationCode" placeholder="ABC123">
+  <button onclick="checkStatus()">Check Status</button>
+  <p id="statusMessage"></p>
+</div>
+
+<script>
+  function checkStatus() {
+    // Here you would typically make a request to the backend to check the status
+    // and update the status message accordingly.
+    // For this example, let's assume the status is retrieved from a backend API.
+    const applicationCode = document.getElementById('applicationCode').value;
+    // Make an API request and update the status message based on the response.
+    // For simplicity, let's just show a hardcoded status.
+    const status = 'Your application is under review.';
+    document.getElementById('statusMessage').innerText = status;
+  }
+</script>
+
+</body>
+</html>
